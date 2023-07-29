@@ -25,7 +25,7 @@ const stats = [
 
 export default function Product() {
   return (
-    <Box bg={"#272727"}>
+    <Box bg={"#272727"} zIndex={"-10"} position={"relative"}>
       <Container maxW={"75%"}>
         <Stack
           direction={{ base: "column", lg: "column" }}

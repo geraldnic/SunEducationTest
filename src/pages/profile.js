@@ -12,10 +12,10 @@ import {
   useColorModeValue,
   Center,
   Button,
-  Link as ChakraLink
+  Link as ChakraLink,
 } from "@chakra-ui/react";
 import React, { useEffect, useState } from "react";
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { Cookies } from "react-cookie";
 import axios from "axios";
 import { HiOutlineMail } from "react-icons/hi";
@@ -44,6 +44,7 @@ function Profile() {
   let { email } = useParams();
   const [totalPages, setTotalPages] = useState(0);
   const [currUser, setCurrUser] = useState({});
+  const navigate = useNavigate();
   const cookies = new Cookies();
   const token = cookies.get("access_token");
   const dividerColor = useColorModeValue("gray.100", "gray.700");
@@ -92,8 +93,8 @@ function Profile() {
   }, [totalPages]);
 
   const logout = () => {
-    cookies.remove("access_token");
-    window.localStorage.removeItem('email');
+    cookies.remove("access_token", { path: `/` });
+    window.localStorage.removeItem("email");
   };
 
   return (
@@ -160,8 +161,8 @@ function Profile() {
           <Link to="/">
             <Button
               colorScheme="blue"
-              maxW="250px"
-              width="90vw"
+              maxW="45vw"
+              width="250px"
               h={"45px"}
               mr={2}
             >
@@ -171,8 +172,8 @@ function Profile() {
           <ChakraLink href="/">
             <Button
               colorScheme="red"
-              maxW="250px"
-              width="90vw"
+              maxW="45vw"
+              width="250px"
               h={"45px"}
               ml={2}
               onClick={logout}

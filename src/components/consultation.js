@@ -3,8 +3,20 @@ import React from "react";
 
 export default function Consultation() {
   return (
-    <Box maxW={["90%", "80%", "75%"]}  textAlign={"center"} mx={"auto"} bg={"#FFCE07"} borderRadius={"20px"} border={"1px solid black"} my={10}>
-      <Text fontSize={"md"} mt={7} mb={2} fontWeight={"500"}>Is software important for your business?</Text>
+    <Box
+      maxW={["90%", "80%", "75%"]}
+      textAlign={"center"}
+      mx={"auto"}
+      bg={"#FFCE07"}
+      borderRadius={"20px"}
+      border={"1px solid black"}
+      my={10}
+      position={"relative"}
+      zIndex={"-10"}
+    >
+      <Text fontSize={"md"} mt={7} mb={2} fontWeight={"500"}>
+        Is software important for your business?
+      </Text>
       <Text fontSize={"4xl"}>Build it with Albatech</Text>
       <Button
         as={"a"}

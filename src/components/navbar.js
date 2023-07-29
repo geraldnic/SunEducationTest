@@ -112,13 +112,13 @@ export default function Navbar() {
           <Flex ml={10} right={0}>
             {!cookies.access_token ? (
               <Button
-                fontSize={["xs","sm","sm"]}
+                fontSize={["xs", "sm", "sm"]}
                 fontWeight="Bold"
                 color={"black"}
                 bg={"#FFCE3D"}
                 border="1px solid black"
                 borderRadius="50px"
-                w={["60px","110px","175px"]}
+                w={["60px", "110px", "175px"]}
                 h="53px"
                 _hover={{
                   bg: "#FFDD77",
@@ -138,7 +138,7 @@ export default function Navbar() {
                 bg={"#FFCE3D"}
                 border="1px solid black"
                 borderRadius="50px"
-                w="175px"
+                w={["60px","60px","175px"]}
                 h="53px"
                 _hover={{
                   bg: "#FFDD77",
@@ -152,10 +152,15 @@ export default function Navbar() {
         </Flex>
       </Flex>
 
-      <Collapse in={isOpen} animateOpacity>
+      <Collapse in={isOpen}>
         <MobileNav />
       </Collapse>
-      <AuthModal isOpen={isModalOpen} onClose={closeModal} close={closeModal} openModal={openModal} />
+      <AuthModal
+        isOpen={isModalOpen}
+        onClose={closeModal}
+        close={closeModal}
+        openModal={openModal}
+      />
     </Box>
   );
 }
@@ -216,8 +221,7 @@ const MobileNav = () => {
           _hover={{
             textDecoration: "none",
           }}
-        >
-        </Box>
+        ></Box>
       </Stack>
     </Stack>
   );

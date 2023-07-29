@@ -95,6 +95,8 @@ export default function Package() {
       maxW={["100%", "85%", "75%"]}
       textAlign={"center"}
       mx={"auto"}
+      position={"relative"}
+      zIndex={"-10"}
     >
       <Stack spacing={4} as={Container} maxW={"100%"} textAlign={"center"}>
         <Text color={"#C4C4C4"} fontSize={"lg"}>

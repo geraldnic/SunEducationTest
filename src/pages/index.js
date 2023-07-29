@@ -1,6 +1,4 @@
 import React from "react";
-import { ChakraProvider } from "@chakra-ui/react";
-import Navbar from "../components/navbar";
 import Hero from "../components/hero";
 import Package from "../components/package";
 import Product from "../components/product";
@@ -8,6 +6,8 @@ import Portofolio from "../components/portofolio";
 import Footer from "../components/footer";
 import SwiperComponent from "../components/swiper";
 import Consultation from "../components/consultation";
+import Testimonial from "../components/testimonial";
+import WhatsappBtn from "../components/whatsappBtn";
 
 function Home() {
   return (
@@ -16,9 +16,11 @@ function Home() {
       <Package />
       <Product />
       <Portofolio />
+      <Testimonial />
       <SwiperComponent />
       <Consultation />
       <Footer />
+      <WhatsappBtn />
     </>
   );
 }

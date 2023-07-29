@@ -20,7 +20,14 @@ const swipers = [Hippo, HomeAndLiving, Ilios, DioLiving, Melandas];
 
 export default function SwiperComponent() {
   return (
-    <Box maxW={"75%"} textAlign={"center"} mx={"auto"} my={10}>
+    <Box
+      maxW={"75%"}
+      textAlign={"center"}
+      mx={"auto"}
+      my={10}
+      position={"relative"}
+      zIndex={"-10"}
+    >
       <Swiper
         modules={[Pagination, A11y, Autoplay]}
         spaceBetween={25}
