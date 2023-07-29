@@ -26,7 +26,6 @@ export default function SwiperComponent() {
       mx={"auto"}
       my={10}
       position={"relative"}
-      zIndex={"-10"}
     >
       <Swiper
         modules={[Pagination, A11y, Autoplay]}

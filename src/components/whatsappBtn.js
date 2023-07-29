@@ -4,7 +4,7 @@ import { BsWhatsapp } from "react-icons/bs";
 
 function WhatsappBtn() {
   return (
-    <Box position={"fixed"} bottom={"8%"} right={"5%"} zIndex={"-10"}>
+    <Box position={"fixed"} bottom={"8%"} right={"5%"} zIndex={1}>
       <Stack direction={"row"} align={"center"}>
         <Flex
           w={[14, 16, 20]}

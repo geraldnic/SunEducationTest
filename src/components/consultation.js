@@ -12,7 +12,6 @@ export default function Consultation() {
       border={"1px solid black"}
       my={10}
       position={"relative"}
-      zIndex={"-10"}
     >
       <Text fontSize={"md"} mt={7} mb={2} fontWeight={"500"}>
         Is software important for your business?
