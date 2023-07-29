@@ -22,6 +22,7 @@ function Testimonial() {
       maxW={["100%", "85%", "75%"]}
       textAlign={"center"}
       mx={"auto"}
+      pb={20}
       position={"relative"}
       zIndex={"-10"}
     >
@@ -67,7 +68,11 @@ function Testimonial() {
             <Box>
               <Box maxW={"550px"} w={"full"} p={6} overflow={"hidden"}>
                 <Stack>
-                  <Heading fontSize={"4xl"} fontFamily={"body"}>
+                  <Heading
+                    fontSize={"4xl"}
+                    fontFamily={"body"}
+                    textShadow="0px 3px 2px rgba(0, 0, 0, 0.50)"
+                  >
                     Amazing People
                   </Heading>
                   <Text fontSize={"2xl"}>
@@ -85,12 +90,12 @@ function Testimonial() {
               </Box>
               <Box maxW={"550px"} w={"full"} mt={10} p={6} overflow={"hidden"}>
                 <Stack>
-                  <Heading fontSize={"xl"} fontFamily={"body"}>
+                  <Heading fontSize={["4xl", "4xl", "lg"]} fontFamily={"body"}>
                     Amazing People
                   </Heading>
-                  <Text fontSize={"lg"}>
-                    "They are people who are not only following the task, but
-                    can work as a team. Together."
+                  <Text fontSize={["2xl", "2xl", "md"]}>
+                    "They are people who are not only following the task, <br />
+                    but can work as a team. Together."
                   </Text>
                 </Stack>
                 <Stack mt={6} direction={"row"} spacing={4} align={"center"}>
@@ -104,12 +109,12 @@ function Testimonial() {
             <Box>
               <Box maxW={"550px"} w={"full"} p={6} overflow={"hidden"}>
                 <Stack>
-                  <Heading fontSize={"xl"} fontFamily={"body"}>
+                  <Heading fontSize={["4xl", "4xl", "lg"]} fontFamily={"body"}>
                     Amazing People
                   </Heading>
-                  <Text fontSize={"lg"}>
-                    "They are people who are not only following the task, but
-                    can work as a team. Together."
+                  <Text fontSize={["2xl", "2xl", "md"]}>
+                    "They are people who are not only following the task, <br />
+                    but can work as a team. Together."
                   </Text>
                 </Stack>
                 <Stack mt={6} direction={"row"} spacing={4} align={"center"}>
@@ -121,8 +126,12 @@ function Testimonial() {
               </Box>
               <Box maxW={"550px"} w={"full"} mt={10} p={6} overflow={"hidden"}>
                 <Stack>
-                  <Heading fontSize={"4xl"} fontFamily={"body"}>
-                    Amazing People
+                  <Heading
+                    fontSize={"4xl"}
+                    fontFamily={"body"}
+                    textShadow="0px 3px 2px rgba(0, 0, 0, 0.50)"
+                  >
+                    Partnership approach
                   </Heading>
                   <Text fontSize={"2xl"}>
                     "We felt like we had a true partner throughout the process.
@@ -139,6 +148,32 @@ function Testimonial() {
               </Box>
             </Box>
           </SimpleGrid>
+          <Box
+            maxW={"550px"}
+            w={"full"}
+            p={6}
+            overflow={"hidden"}
+            textAlign={"left"}
+            position={["static", "static", "absolute"]}
+            bottom={"-13%"}
+            left={"20%"}
+          >
+            <Stack>
+              <Heading fontSize={["4xl", "4xl", "lg"]} fontFamily={"body"}>
+                Amazing People
+              </Heading>
+              <Text fontSize={["2xl", "2xl", "md"]}>
+                "They are people who are not only following the task, <br />
+                but can work as a team. Together."
+              </Text>
+            </Stack>
+            <Stack mt={6} direction={"row"} spacing={4} align={"center"}>
+              <Stack direction={"column"} spacing={0} fontSize={"sm"}>
+                <Text fontWeight={600}>Matthijs Piëst</Text>
+                <Text color={"gray.500"}>COO at WieBetaaltWat</Text>
+              </Stack>
+            </Stack>
+          </Box>
         </Box>
       </Stack>
     </Box>
